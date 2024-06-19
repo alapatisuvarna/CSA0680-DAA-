@@ -1,0 +1,7 @@
+9. Palindrome Number
+Given an integer x, return true if x is a palindrome, and false otherwise.
+PROGRAM:
+num = -121
+num_str = str(num)
+is_palindrome = num_str == num_str[::-1]
+print(is_palindrome)  
