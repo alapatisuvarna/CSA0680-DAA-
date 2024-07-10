@@ -1,0 +1,6 @@
+7.Write a program that takes an input list of n numbers and  creates a new list containing only the unique elements from the original list. What is the space complexity of the algorithm? 
+PROGRAM:
+def unique_elements(lst):
+    return list(set(lst))
+print(unique_elements([3, 7, 3, 5, 2, 5, 9, 2]))  
+  
