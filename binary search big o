@@ -1,0 +1,20 @@
+9.Checks if a given number x exists in a sorted array arr using binary search. Analyze its time complexity using Big-O notation.
+PROGRAM:
+def binary_search(arr, x):
+    l, r = 0, len(arr) - 1
+    while l <= r:
+        m = (l + r) // 2
+        if arr[m] == x:
+            return m
+        elif arr[m] < x:
+            l = m + 1
+        else:
+            r = m - 1
+    return -1
+arr = sorted([3, 4, 6, -9, 10, 8, 9, 30])
+key = 10
+index = binary_search(arr, key)
+if index != -1:
+    print(f"Element {key} is found at position {index}")
+else:
+    print(f"Element {key} is not found")
